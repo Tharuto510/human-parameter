@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>初めてのWebアプリ</title>
+</head>
+<body>
+
+<h1>人間パラメーター</h1>
+
+<p>筋力: <span id="power">0</span></p>
+
+<button onclick="upPower()">筋トレした！</button>
+
+<script>
+function upPower() {
+    let power = document.getElementById("power");
+    power.textContent = Number(power.textContent) + 1;
+}
+</script>
+
+</body>
+</html>
